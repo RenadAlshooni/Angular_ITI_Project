@@ -1,0 +1,82 @@
+<div class="hero fade-in-bottom">
+  <p class="categories">about me</p>
+  <h1>
+    Passionate creative professional with a love for innovative design and
+    artistic expression.
+  </h1>
+</div>
+<div class="hero-img fade-in-bottom"></div>
+<div class="about-us">
+  <p class="about-header header">Welcome to My Creative World.</p>
+  <p class="about-text">
+    I'm a passionate creative professional who believes in the power of design
+    to transform ideas into meaningful experiences. My journey in the creative
+    industry has been driven by curiosity, innovation, and a deep appreciation
+    for beautiful, functional design.
+  </p>
+  <p class="about-text">
+    With expertise spanning digital art, web design, photography, and creative
+    direction, I approach each project as an opportunity to push creative
+    boundaries and deliver exceptional results. My work is characterized by
+    clean aesthetics, thoughtful user experiences, and a commitment to
+    excellence in every detail.
+  </p>
+  <p class="about-text">
+    I believe that great design is not just about aesthetics, but about solving
+    problems and creating connections. Whether I'm crafting a brand identity,
+    designing a user interface, or capturing a moment through photography, my
+    goal is always to create work that resonates, inspires, and makes a lasting
+    impact.
+  </p>
+  <a href="#contact-section" class="contact-link">Get In Touch</a>
+</div>
+<div class="separator">
+  <div class="separator-line"></div>
+</div>
+<p class="team-header">my creative skills</p>
+<section class="our-team">
+  <!-- Displaying my creative skills and expertise areas -->
+  <div class="card" *ngFor="let skill of creativeSkills">
+    <img [src]="skill.image" alt="My Creative Skill" />
+    <p class="team-member-name">{{ skill.name }}</p>
+    <p class="team-member-role">{{ skill.role }}</p>
+  </div>
+</section>
+<div class="separator">
+  <div class="separator-line"></div>
+</div>
+<div class="about-us" id="contact-section">
+  <p class="about-header header">Ready to collaborate?</p>
+  <p class="about-text">
+    I'm always excited to work on new creative projects and collaborate with
+    like-minded individuals and companies. Whether you have a specific project
+    in mind or just want to discuss creative possibilities, I'd love to hear
+    from you.
+  </p>
+</div>
+<div class="contact">
+  <div class="details">
+    <p class="no address">1</p>
+    <p class="contact-type">location</p>
+    <div class="contact-content">
+      Creative Studio<br />
+      Design District<br />
+      Creative City
+    </div>
+  </div>
+  <div class="details">
+    <p class="no">2</p>
+    <p class="contact-type">general inquiries</p>
+    <p class="contact-content">hello@mycreativeportfolio.com</p>
+  </div>
+  <div class="details">
+    <p class="no">3</p>
+    <p class="contact-type">project inquiries</p>
+    <p class="contact-content">projects@mycreativeportfolio.com</p>
+  </div>
+  <div class="details">
+    <p class="no">4</p>
+    <p class="contact-type">collaboration</p>
+    <p class="contact-content">collab@mycreativeportfolio.com</p>
+  </div>
+</div>

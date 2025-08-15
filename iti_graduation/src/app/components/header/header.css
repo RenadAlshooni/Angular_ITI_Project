@@ -1,0 +1,70 @@
+/* Logo container styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Logo text styling - making it black */
+.logo-text {
+  color: #000000 !important;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.nav-button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+@media screen and (max-width: 768px) {
+  .nav-container {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 35px; /* Slightly smaller on mobile */
+    margin-right: 8px;
+  }
+
+  .logo-text {
+    font-size: 16px; /* Smaller text on mobile */
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  .nav-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-container {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 30px; /* Even smaller on very small screens */
+    margin-right: 6px;
+  }
+
+  .logo-text {
+    font-size: 14px; /* Smaller text on very small screens */
+  }
+
+  nav {
+    gap: 5px;
+  }
+
+  .nav-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}

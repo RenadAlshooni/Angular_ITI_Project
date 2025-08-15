@@ -1,0 +1,55 @@
+<section class="home fade-in-bottom">
+  <div class="top-post">
+    <div class="top-post-image-container">
+      <img
+        src="top-post-image.jpg"
+        loading="lazy"
+        alt="My Featured Project"
+        class="top-post-img"
+      />
+    </div>
+    <div class="top-post-text">
+      <a href="#" class="top-post-category">Creative Portfolio</a>
+      <h2 class="top-post-header">
+        Welcome to my creative world where imagination meets innovation.
+      </h2>
+      <p class="top-post-details">
+        This is my personal creative portfolio showcasing my passion for design,
+        photography, and digital art. Each project represents a unique journey
+        of creativity and innovation.
+      </p>
+      <p class="post-author-text">By<a href="#"> My Creative Journey</a></p>
+    </div>
+  </div>
+</section>
+<section class="posts-section fade-in-bottom-2">
+  <!-- Displaying my creative projects portfolio -->
+  <div class="post" *ngFor="let item of creativeProjects">
+    <a href="#">
+      <img
+        [src]="item.image"
+        loading="lazy"
+        alt="My Creative Project"
+        class="post-image"
+      />
+    </a>
+    <a href="#" class="post-category">{{ item.category }}</a>
+    <a href="#" class="post-header">
+      <h3>{{ item.header }}</h3>
+    </a>
+    <p class="post-author-text author">
+      By<a href="#"> {{ item.author }}</a>
+    </p>
+  </div>
+</section>
+<div class="separator">
+  <div class="separator-line"></div>
+</div>
+<div class="latest-header">My Latest Creative Work</div>
+<app-latest-post-component></app-latest-post-component>
+<div class="button">
+  <a href="/latest-posts" class="latest-posts-button"
+    >View all my latest creative projects</a
+  >
+</div>
+<app-featurd-post></app-featurd-post>
